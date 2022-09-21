@@ -1,0 +1,512 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16121 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/user/Desktop/car_game2
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59011
+Successfully changed project path to: C:/Users/user/Desktop/car_game2
+C:/Users/user/Desktop/car_game2
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 132.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.8f1 (b30333d56e81)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/user/Desktop/car_game2/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3990 MB
+    Driver:   30.0.15.1215
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56856
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011490 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 185.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.411 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1412ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1128ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (241ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (588ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (186ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (294ms)
+				ProcessInitializeOnLoadMethodAttributes (89ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.016070 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Desktop\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Desktop\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 119.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.599 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1601ms)
+		BeginReloadAssembly (155ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (1291ms)
+			LoadAssemblies (135ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (338ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (687ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (120ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (302ms)
+				ProcessInitializeOnLoadMethodAttributes (117ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 3.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5028 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (0.7 MB). Loaded Objects now: 5478.
+Memory consumption went from 196.1 MB to 195.4 MB.
+Total: 9.174400 ms (FindLiveObjects: 1.577100 ms CreateObjectMapping: 0.764100 ms MarkObjects: 6.344900 ms  DeleteObjects: 0.486700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 157234.384751 seconds.
+  path: Assets/Readme.asset
+  artifactKey: Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Readme.asset using Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2f2b655bf21bdea72856b1c39a4a32') in 0.078190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 136.729600 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models
+  artifactKey: Guid(4594165b421320645a06e15a2726a29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models using Guid(4594165b421320645a06e15a2726a29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e9a14353a40286757c985a78b6ae1e') in 0.009956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.016471 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles
+  artifactKey: Guid(3396674253d0b0a4c90e621103e18be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles using Guid(3396674253d0b0a4c90e621103e18be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8903a968bd7ef9c902aca9d200bb03b4') in 0.008467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.532250 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main
+  artifactKey: Guid(7877976793da9464b93d0d68983b176c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main using Guid(7877976793da9464b93d0d68983b176c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca82f1206eb5b15407b931a719a336d') in 0.011641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.525230 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo
+  artifactKey: Guid(96664324f000c8c45bed3c09fc0f2e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo using Guid(96664324f000c8c45bed3c09fc0f2e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '195cc2753051b36b1be3d98baa8e3077') in 0.008579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.834388 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Prefabs
+  artifactKey: Guid(c3467f63983cae64aaedd5a4d1697e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Prefabs using Guid(c3467f63983cae64aaedd5a4d1697e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b029b954009651b5749710ddae784e0') in 0.006850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.040114 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Prefabs/RMCarDemo_EU.prefab
+  artifactKey: Guid(ccfae9991e7591241a45533953f96f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Prefabs/RMCarDemo_EU.prefab using Guid(ccfae9991e7591241a45533953f96f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ad1864b5fd593d242abcb9663f61ef4') in 1.180156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Prefabs/RMCarDemoInterior.prefab
+  artifactKey: Guid(26b44b79e6f502f439bb611194a04cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Prefabs/RMCarDemoInterior.prefab using Guid(26b44b79e6f502f439bb611194a04cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c249bacaa98c4d9eaacffb5803b543') in 0.101344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Prefabs/RMCarDemoHighInterior_EU.prefab
+  artifactKey: Guid(4e6c71838f0125f42beb1cf5e9bfc83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Prefabs/RMCarDemoHighInterior_EU.prefab using Guid(4e6c71838f0125f42beb1cf5e9bfc83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531e740a1b8e7d0e7facb4ad6fa048f5') in 0.104153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.943485 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26BodyAlbedo.tga
+  artifactKey: Guid(55eae06b35a9f4c46a99330e19e8e271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26BodyAlbedo.tga using Guid(55eae06b35a9f4c46a99330e19e8e271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '910da71b322b358411f3b2d1d4b25ea4') in 0.033446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26Glass.tga
+  artifactKey: Guid(a145c629dc9b1be4985807c0f4ccdbae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26Glass.tga using Guid(a145c629dc9b1be4985807c0f4ccdbae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be82e8e077b0599b2a42ff73d5000c19') in 0.026386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26HUBAlbedo.tga
+  artifactKey: Guid(110eef0eccbfc6942a747004c860d317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26HUBAlbedo.tga using Guid(110eef0eccbfc6942a747004c860d317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '563c5ceb591c8fb2ccc812ab05116ded') in 0.024607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26HUBMetallicSmoothness.tga
+  artifactKey: Guid(21a3d7bc7299268418590c4fe3b92231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26HUBMetallicSmoothness.tga using Guid(21a3d7bc7299268418590c4fe3b92231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0dcea68adeee19db43311de1f87293') in 0.022569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26HUBEmissive.tga
+  artifactKey: Guid(15834600c4c0b7141b3848dd012e7291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26HUBEmissive.tga using Guid(15834600c4c0b7141b3848dd012e7291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b490a70a15396912afe6bdda1adf634d') in 0.026639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.567647 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26Interior3PEmissive.tga
+  artifactKey: Guid(f33b270484a2b954fb8c4d31606d1f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26Interior3PEmissive.tga using Guid(f33b270484a2b954fb8c4d31606d1f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '238738994b5c2e2ce91ea7ef74e4d505') in 0.022407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.028392 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26Interior3PMetallicSmoothness.tga
+  artifactKey: Guid(e76de26d91692de45958d24c8f5c7fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26Interior3PMetallicSmoothness.tga using Guid(e76de26d91692de45958d24c8f5c7fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df5ebb9b64d594a28a8bd5a1e1551fe') in 0.020994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.518582 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26Interior3PNormal.tga
+  artifactKey: Guid(3b9b487ed35843a4d8f4f49f6873b641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26Interior3PNormal.tga using Guid(3b9b487ed35843a4d8f4f49f6873b641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a84fc55756484ce55c1b5408cf25601b') in 0.035281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26InteriorMetallicSmoothness.tga
+  artifactKey: Guid(1008535513a82214b8856955bb86539d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26InteriorMetallicSmoothness.tga using Guid(1008535513a82214b8856955bb86539d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0226769b661311b82711c1a9285e2c70') in 0.027541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.149403 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26InteriorNormal.tga
+  artifactKey: Guid(99e9a40187bcff741bd9f140dd152926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26InteriorNormal.tga using Guid(99e9a40187bcff741bd9f140dd152926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e487d81c0bfb83043b1ad8fe2dfa356f') in 0.027244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26LightEmissive.tga
+  artifactKey: Guid(21587a56708cdd54ea97c739b8935b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26LightEmissive.tga using Guid(21587a56708cdd54ea97c739b8935b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8471ddcd106f886a1b1e7c95421ace31') in 0.025623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.015595 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26LightNormal.tga
+  artifactKey: Guid(01864d59456f4f446921f25ad7999bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26LightNormal.tga using Guid(01864d59456f4f446921f25ad7999bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55355149eeff74dc40e0dcb45427193') in 0.025605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.094827 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26PaintAO.tga
+  artifactKey: Guid(87ad9d3cca68b304486447c2a6238230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26PaintAO.tga using Guid(87ad9d3cca68b304486447c2a6238230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f296cd6c0c1d9c78e5de7542fc85e1') in 0.027253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26WheelAlbedo.tga
+  artifactKey: Guid(e59e6e1f972fc7b49bcb2a1eae69e583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26WheelAlbedo.tga using Guid(e59e6e1f972fc7b49bcb2a1eae69e583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afb8ea64274744721d041b7b09e1de90') in 0.019297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.132780 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26WheelNormal.tga
+  artifactKey: Guid(948eeddcc4ff58b419c3e77eab04cf91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Textures/RMCar26WheelNormal.tga using Guid(948eeddcc4ff58b419c3e77eab04cf91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627901716a8184cc6dbd0709d262d743') in 0.020621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.021118 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Demo/demo.mat
+  artifactKey: Guid(1bc635ae61b31ce45a893b5c276c15d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Demo/demo.mat using Guid(1bc635ae61b31ce45a893b5c276c15d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a0fd3c2f5d43ffc7da3122b132bca1c') in 0.048511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.189302 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_0.mat
+  artifactKey: Guid(f894c3ead2050264787ca254aee67801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_0.mat using Guid(f894c3ead2050264787ca254aee67801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2abcb4de4e8d2044dbcc85abce647ecf') in 0.017766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_7.mat
+  artifactKey: Guid(756683656209264429a28f8f624dbbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_7.mat using Guid(756683656209264429a28f8f624dbbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d8102d6742e70f7d8f6cfd788d48afe') in 0.055867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_5.mat
+  artifactKey: Guid(ede31eb529c1a0d49a28f8f2b3a24a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_5.mat using Guid(ede31eb529c1a0d49a28f8f2b3a24a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e553466f67967ae41b39086f071200a') in 0.061396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_6.mat
+  artifactKey: Guid(74cbf476563d7f148b06746c22a1d947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_6.mat using Guid(74cbf476563d7f148b06746c22a1d947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c459f7245b1ad2f09366add8d265ef75') in 0.039771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_4.mat
+  artifactKey: Guid(132a573cb6ee950439bccb6fecf0dc6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_4.mat using Guid(132a573cb6ee950439bccb6fecf0dc6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d177c00abbf3ad6ae6442bb0d12cc0d') in 0.049464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.622674 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_9.mat
+  artifactKey: Guid(2dfc1af2bdae8f84f88708dcc286972b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_9.mat using Guid(2dfc1af2bdae8f84f88708dcc286972b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc06abb3bb52c74c32660e441ffedca9') in 0.022946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.073232 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_D.mat
+  artifactKey: Guid(623b2990b7e7feb4ab2015acce0445d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_D.mat using Guid(623b2990b7e7feb4ab2015acce0445d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd78c3a132110f16b0faf23c1e3fc102d') in 0.028331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_F.mat
+  artifactKey: Guid(16ba3bb6878c2974e91a73a1a3236dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_F.mat using Guid(16ba3bb6878c2974e91a73a1a3236dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a9dfabc5da87bda64f76fdd957e130') in 0.024351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_L.mat
+  artifactKey: Guid(9b6dac862d6d74d489fbfb8f02d12e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_L.mat using Guid(9b6dac862d6d74d489fbfb8f02d12e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf27f34cfd1a66288d5f47f60f1a29a') in 0.027376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_S.mat
+  artifactKey: Guid(22fe15ca9376b964da52299e323b03db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_S.mat using Guid(22fe15ca9376b964da52299e323b03db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e53d30e6279af51ce7a8edebc8a4cae5') in 0.031003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_6.mat
+  artifactKey: Guid(3b61c833cd3dbad48b7550e57f57081f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_6.mat using Guid(3b61c833cd3dbad48b7550e57f57081f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '469a2f7b97be682b6f72695c2e6ff378') in 0.024568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_5.mat
+  artifactKey: Guid(daf90fdc8b6d8734593b668c894a33e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_5.mat using Guid(daf90fdc8b6d8734593b668c894a33e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f123ba7564e750a6f49496d9f337f68d') in 0.034018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_Q.mat
+  artifactKey: Guid(2efe96cc32cd3f842b2272a2c4fd24a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_Q.mat using Guid(2efe96cc32cd3f842b2272a2c4fd24a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'effae8b92c1def4bfddb4cc9d821110d') in 0.027325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_8.mat
+  artifactKey: Guid(9a4a7d971451c884d84e8ba23243bc35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_8.mat using Guid(9a4a7d971451c884d84e8ba23243bc35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d7600d5798ecf662c37343e43ff376') in 0.030072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_J.mat
+  artifactKey: Guid(c59d18b0bc64b234da96407e9d58a623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_J.mat using Guid(c59d18b0bc64b234da96407e9d58a623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02083e8d01f4a34f1d4e354c09539244') in 0.029058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_7.mat
+  artifactKey: Guid(c8d8b672968a1aa4b93fbb179edba848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_7.mat using Guid(c8d8b672968a1aa4b93fbb179edba848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bdc1583ed6a0c525e73678cdb05690b') in 0.028784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_A.mat
+  artifactKey: Guid(6de366f2de98347469484bc60cb2ac51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_A.mat using Guid(6de366f2de98347469484bc60cb2ac51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9322d56fe007edf874a26ccf15c7eade') in 0.030043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_1.mat
+  artifactKey: Guid(19dcf1535eb24f6488fcc2b5972abb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_1.mat using Guid(19dcf1535eb24f6488fcc2b5972abb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bcbfa57e1d233934c7eb7117a632ac6') in 0.026534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_H.mat
+  artifactKey: Guid(59b705988ade79b41aa065872ce214c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_H.mat using Guid(59b705988ade79b41aa065872ce214c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff0351ebb35eda0eb3fe3a052e46ba7') in 0.029256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_X.mat
+  artifactKey: Guid(01ad1a76654e23440832552ee111eefd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_X.mat using Guid(01ad1a76654e23440832552ee111eefd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93869da2c0d488c35b5d1d731b0080fe') in 0.035017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_M.mat
+  artifactKey: Guid(63920e814f8cd824d93dea9dcfc52c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_M.mat using Guid(63920e814f8cd824d93dea9dcfc52c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74cd23f89500814208ab6bffb21ebef8') in 0.031721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_N.mat
+  artifactKey: Guid(f82dc7374391c5147a0f008b49fe647f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Eu_Number_N.mat using Guid(f82dc7374391c5147a0f008b49fe647f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72cb60378e2b761627f2b0fa3d2ab3e8') in 0.036317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_0.mat
+  artifactKey: Guid(7c235a69abca78e43828bc6c5a5f80b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_0.mat using Guid(7c235a69abca78e43828bc6c5a5f80b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '866b4d420fdcb52e9f7cd76416e5022a') in 0.029529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_G.mat
+  artifactKey: Guid(8585361da9c32d446bdb94fee2b805f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_G.mat using Guid(8585361da9c32d446bdb94fee2b805f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36cf238676e005df3a265a7e4bd2ddea') in 0.049310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_S.mat
+  artifactKey: Guid(ccfff0c5c50eae6448bddfb699b5eed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_S.mat using Guid(ccfff0c5c50eae6448bddfb699b5eed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44bd06524f634cea06b03a4a11f6e63') in 0.062443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_Y.mat
+  artifactKey: Guid(a648deab6c452e44c853396ab3509106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Materials/Numbers_License_Plate/Usa_Number_Y.mat using Guid(a648deab6c452e44c853396ab3509106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '350bab5180f7f2ce41e1fb7507c7ef3d') in 0.051658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.676952 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Textures/LicensePlateEuMetallicSmoothness.tga
+  artifactKey: Guid(311d64bc9dc7bff4595b897622bd9967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Textures/LicensePlateEuMetallicSmoothness.tga using Guid(311d64bc9dc7bff4595b897622bd9967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca29ca655db6a1618d0a520d129f200e') in 0.065687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Textures/LicensePlateUsNormal.tga
+  artifactKey: Guid(ddc538ac759a10c49b1d6a8c280efda6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Textures/LicensePlateUsNormal.tga using Guid(ddc538ac759a10c49b1d6a8c280efda6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e53096360f0cbd2d3a5e57102ce542') in 0.013921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Textures/LicensePlateUsMetallicSmoothness.tga
+  artifactKey: Guid(0d2636662acd4844cb4017d272ca2930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/Main/Textures/LicensePlateUsMetallicSmoothness.tga using Guid(0d2636662acd4844cb4017d272ca2930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdbd7bb07d514a28e5c8c9382903fb17') in 0.031418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.511631 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Meshes/RMCarDemoInterior.FBX
+  artifactKey: Guid(2dab4cb77fba9524f9b603be63940d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Meshes/RMCarDemoInterior.FBX using Guid(2dab4cb77fba9524f9b603be63940d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92c10b5a695e0de31e90777bf025af3d') in 0.427320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.729501 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Meshes/Materials/RMCarDemo_Glass.mat
+  artifactKey: Guid(7bd90c865fd6fd647829d7b7f0cad9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Meshes/Materials/RMCarDemo_Glass.mat using Guid(7bd90c865fd6fd647829d7b7f0cad9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55cd473c283306c48fb9caf092903b04') in 0.026711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Meshes/Materials/RMCarDemo_Interior3P.mat
+  artifactKey: Guid(dfec3b3bb33158c4bb00c540a66b4601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Meshes/Materials/RMCarDemo_Interior3P.mat using Guid(dfec3b3bb33158c4bb00c540a66b4601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9af54343072e39709ced66c9d4d2728') in 0.066379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Meshes/Materials/RMCarDemo_Interior1P.mat
+  artifactKey: Guid(fdbb4c76159dbf147913967e25b031e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticMobileCars - Pro 3D Models/Vehicles/RMCarDemo/Meshes/Materials/RMCarDemo_Interior1P.mat using Guid(fdbb4c76159dbf147913967e25b031e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea12c5dd065e242bf06002c6bec66ee2') in 0.058426 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
