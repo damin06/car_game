@@ -1,0 +1,709 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16121 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+C:/Users/user/Documents/car_game2/car_game2
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+62210
+Successfully changed project path to: C:/Users/user/Documents/car_game2/car_game2
+C:/Users/user/Documents/car_game2/car_game2
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 127.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.8f1 (b30333d56e81)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/user/Documents/car_game2/car_game2/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3990 MB
+    Driver:   30.0.15.1215
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009484 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 91.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.640 seconds
+Domain Reload Profiling:
+	ReloadAssembly (640ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (409ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (106ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (240ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (91ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (91ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006335 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 99.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.132 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1133ms)
+		BeginReloadAssembly (92ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (943ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (233ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (549ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (100ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (277ms)
+				ProcessInitializeOnLoadMethodAttributes (72ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (0.7 MB). Loaded Objects now: 5549.
+Memory consumption went from 210.2 MB to 209.5 MB.
+Total: 3.842800 ms (FindLiveObjects: 0.393600 ms CreateObjectMapping: 0.225700 ms MarkObjects: 2.934700 ms  DeleteObjects: 0.287900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006680 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.073 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1074ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (846ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (282ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (356ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (187ms)
+				ProcessInitializeOnLoadMethodAttributes (87ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4927 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (0.6 MB). Loaded Objects now: 5551.
+Memory consumption went from 199.7 MB to 199.0 MB.
+Total: 4.784700 ms (FindLiveObjects: 0.521100 ms CreateObjectMapping: 0.389000 ms MarkObjects: 3.467000 ms  DeleteObjects: 0.406400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005893 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.077 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1078ms)
+		BeginReloadAssembly (149ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (819ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (258ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (365ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (200ms)
+				ProcessInitializeOnLoadMethodAttributes (78ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (0.7 MB). Loaded Objects now: 5546.
+Memory consumption went from 199.0 MB to 198.3 MB.
+Total: 2.861400 ms (FindLiveObjects: 0.327500 ms CreateObjectMapping: 0.175100 ms MarkObjects: 2.073400 ms  DeleteObjects: 0.284400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007262 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.161 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1161ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (901ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (278ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (415ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (86ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4927 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (0.7 MB). Loaded Objects now: 5557.
+Memory consumption went from 199.7 MB to 199.0 MB.
+Total: 2.916600 ms (FindLiveObjects: 0.396400 ms CreateObjectMapping: 0.186000 ms MarkObjects: 2.085200 ms  DeleteObjects: 0.247800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 174462.883953 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/idle.wav
+  artifactKey: Guid(4290a50fa11eb394e8f50852efd52ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/idle.wav using Guid(4290a50fa11eb394e8f50852efd52ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7ad41f82269fd99bc7db631953f68b') in 0.145732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.234921 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Engine/high_on.wav
+  artifactKey: Guid(0c62ed23f67dfb647a66e0b33f8083d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Engine/high_on.wav using Guid(0c62ed23f67dfb647a66e0b33f8083d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '266de3d9f931594bf7f95c58f6ddb74f') in 0.020952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Engine/startup.wav
+  artifactKey: Guid(3d9cc668ff2f3734a81bdb7943afe78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Engine/startup.wav using Guid(3d9cc668ff2f3734a81bdb7943afe78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a417ccb1666713aa3a2caaab05a3bec5') in 0.029779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Engine/med_off.wav
+  artifactKey: Guid(76f8cd9b1282cb94b9d60ce8645bc650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Engine/med_off.wav using Guid(76f8cd9b1282cb94b9d60ce8645bc650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f12b41749720e99c73af0ab69531bc2') in 0.022201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Engine/low_on.wav
+  artifactKey: Guid(7cc945fccaddf0c48a6fa20065d0d762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Engine/low_on.wav using Guid(7cc945fccaddf0c48a6fa20065d0d762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d81bc836c3eda838e2cf3a87d730e5') in 0.018103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.679189 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/ExhaustFires/ExhaustFire2.wav
+  artifactKey: Guid(abe24e1d59cd24e48ab2b17acb6b57ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/ExhaustFires/ExhaustFire2.wav using Guid(abe24e1d59cd24e48ab2b17acb6b57ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b50c11de3672f57bbe51d2ef0fd4c1d') in 0.015111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/ExhaustFires/ExhaustFire6.wav
+  artifactKey: Guid(4ebe01570cad61a40be61693713688b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/ExhaustFires/ExhaustFire6.wav using Guid(4ebe01570cad61a40be61693713688b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6731d7b587a0e168baabb8dbebd4f6df') in 0.016654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.441668 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Subaru/subaru/fs-sub.wav
+  artifactKey: Guid(cea4743486cf1834e91b37e2cfeff67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Subaru/subaru/fs-sub.wav using Guid(cea4743486cf1834e91b37e2cfeff67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30df9fd2d1c9609176784ef1d2035399') in 0.019807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Subaru/subaru/rs-sub.wav
+  artifactKey: Guid(ec025640d4cb03744b5a50698e725152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Subaru/subaru/rs-sub.wav using Guid(ec025640d4cb03744b5a50698e725152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc157c4b36520c5eb1682bfb74e63ab3') in 0.019203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Subaru/subaru/rt-sub.wav
+  artifactKey: Guid(47df105961429694889779317fce73e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Subaru/subaru/rt-sub.wav using Guid(47df105961429694889779317fce73e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fd58c7bec4e6fcee85917eebf2fd8d3') in 0.015949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.371442 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Subaru/subaru/det3.wav
+  artifactKey: Guid(4cdf41d2dcddc35408cdef208ef77546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Subaru/subaru/det3.wav using Guid(4cdf41d2dcddc35408cdef208ef77546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa796bee83c52c047335d145614a5592') in 0.016187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Subaru/subaru/detidle.wav
+  artifactKey: Guid(a104b1ee0608ba54a812fd49a19d9f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Subaru/subaru/detidle.wav using Guid(a104b1ee0608ba54a812fd49a19d9f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71315ab077a66bb5a2d8f8c53cf41740') in 0.014326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.671716 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Subaru/subaru/det1.wav
+  artifactKey: Guid(57fbcdc233943ed4fa71267f7ddbdfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Subaru/subaru/det1.wav using Guid(57fbcdc233943ed4fa71267f7ddbdfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76d1358f0f655799b3322d1f1f44b94b') in 0.016857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.175293 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Lancer/lancer/det1.wav
+  artifactKey: Guid(fcd2f6164601f2147a99ed7d2835d89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Lancer/lancer/det1.wav using Guid(fcd2f6164601f2147a99ed7d2835d89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a38decedf6de69f67da8009a2f9e05') in 0.018269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Lancer/lancer/detidle.wav
+  artifactKey: Guid(754bb4d9cad5b174f9d96addc376a108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Lancer/lancer/detidle.wav using Guid(754bb4d9cad5b174f9d96addc376a108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea625a00adc7f20461c41df36274467e') in 0.021132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Lancer/lancer/det4.wav
+  artifactKey: Guid(5cc8bc8a4b8745544bd91ff35f9a19fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Lancer/lancer/det4.wav using Guid(5cc8bc8a4b8745544bd91ff35f9a19fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b043b9f747202e7131e7d0a28a9aa396') in 0.013967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Lancer/lancer/det3.wav
+  artifactKey: Guid(7e5ddcb036fb4fa43a34f6b116cf39ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Lancer/lancer/det3.wav using Guid(7e5ddcb036fb4fa43a34f6b116cf39ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba4bf58d5d47fae4bc3c0597ee96f48') in 0.015899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.772198 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Lancer/lancer/rt-lancer.wav
+  artifactKey: Guid(8aee1073048c87f42abb7aa0b1620845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/PC Computer - Colin McRae Rally 20 - Lancer/lancer/rt-lancer.wav using Guid(8aee1073048c87f42abb7aa0b1620845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbfcd5ecbe2d4e2412569502d1254493') in 0.014773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.838678 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Crash/carimpact4.wav
+  artifactKey: Guid(82f3ac1f97a9a384db5bcb1fd1966b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Crash/carimpact4.wav using Guid(82f3ac1f97a9a384db5bcb1fd1966b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21ac6acc069d0de99be79a9245bae2e7') in 0.022115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Crash/carimpact5.wav
+  artifactKey: Guid(370cb2e9c8bccfe48bdec70db08e4644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Crash/carimpact5.wav using Guid(370cb2e9c8bccfe48bdec70db08e4644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a510ecebd1d0c4ab118ad688f70a70') in 0.029752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.583901 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Turbo/Turbo.WAV
+  artifactKey: Guid(7f48c51367eb26f4bb55673f28ae5404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Turbo/Turbo.WAV using Guid(7f48c51367eb26f4bb55673f28ae5404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2135ed293dd15ead33dbf9b4cf1017') in 0.013975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Turbo/TurboBlow2.wav
+  artifactKey: Guid(823e15bf810982849a39b4368dfdaf27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Turbo/TurboBlow2.wav using Guid(823e15bf810982849a39b4368dfdaf27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb2229fa08f9f91655b875f71939475') in 0.017184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.056272 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Misc/Reverse.wav
+  artifactKey: Guid(504366e8a8a713b43b676259cd5a7b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Misc/Reverse.wav using Guid(504366e8a8a713b43b676259cd5a7b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9cf4f6c08ebd8bffde7cfcedcaba406') in 0.014654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Misc/Wind.wav
+  artifactKey: Guid(6c7312d1af74e3f4599722894161fafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Misc/Wind.wav using Guid(6c7312d1af74e3f4599722894161fafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3370e5bdc5ddc5c37e60f8a71251e5') in 0.028154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.767208 seconds.
+  path: Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Wheel/SandSkid.wav
+  artifactKey: Guid(59e038dfc28ad83419aff1c81f974134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zukomazi - Pro Drift Controller v1/Audio/Sounds/Wheel/SandSkid.wav using Guid(59e038dfc28ad83419aff1c81f974134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bda254fbb1f59f73b7503a16ae31f5c9') in 0.014192 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007695 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.141 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1141ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (915ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (259ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (429ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (227ms)
+				ProcessInitializeOnLoadMethodAttributes (90ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4927 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (0.7 MB). Loaded Objects now: 5569.
+Memory consumption went from 203.9 MB to 203.2 MB.
+Total: 3.385800 ms (FindLiveObjects: 0.397200 ms CreateObjectMapping: 0.184600 ms MarkObjects: 2.466500 ms  DeleteObjects: 0.336600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008560 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.068 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1069ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (830ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (260ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (384ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (79ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4927 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (0.7 MB). Loaded Objects now: 5572.
+Memory consumption went from 203.7 MB to 203.0 MB.
+Total: 3.346400 ms (FindLiveObjects: 0.421700 ms CreateObjectMapping: 0.353900 ms MarkObjects: 2.290500 ms  DeleteObjects: 0.279500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008275 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.147 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1147ms)
+		BeginReloadAssembly (134ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (909ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (276ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (434ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (92ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4927 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (0.7 MB). Loaded Objects now: 5575.
+Memory consumption went from 203.9 MB to 203.2 MB.
+Total: 4.200700 ms (FindLiveObjects: 0.496100 ms CreateObjectMapping: 0.289700 ms MarkObjects: 2.771600 ms  DeleteObjects: 0.641900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009437 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\car_game2\car_game2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.112 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1113ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (850ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (387ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4927 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (0.7 MB). Loaded Objects now: 5578.
+Memory consumption went from 203.9 MB to 203.2 MB.
+Total: 4.016100 ms (FindLiveObjects: 0.427100 ms CreateObjectMapping: 0.272100 ms MarkObjects: 2.904600 ms  DeleteObjects: 0.411300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

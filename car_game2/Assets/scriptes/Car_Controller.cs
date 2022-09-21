@@ -51,28 +51,28 @@ public class Car_Controller : MonoBehaviour
     [SerializeField] private WheelCollider wheelCollider_FL;
     [SerializeField] private GameObject wheelModel_FL;
     [SerializeField] private GameObject wheelSlider_FL;
-    [SerializeField] private GameObject wheelSmoke_FL;
+    [SerializeField] private ParticleSystem wheelSmoke_FL;
 
 
     [Header("FR")]
     [SerializeField] private WheelCollider wheelCollider_FR;
     [SerializeField] private GameObject wheelModel_FR;
     [SerializeField] private GameObject wheelSlider_FR;
-    [SerializeField] private GameObject wheelSmoke_FR;
+    [SerializeField] private ParticleSystem wheelSmoke_FR;
 
 
         [Header("RL")]
     [SerializeField] private WheelCollider wheelCollider_RL;
     [SerializeField] private GameObject wheelModel_RL;
     [SerializeField] private GameObject wheelSlider_RL;
-    [SerializeField] private GameObject wheelSmoke_RL;
+    [SerializeField] private ParticleSystem wheelSmoke_RL;
 
 
         [Header("RR")]
     [SerializeField] private WheelCollider wheelCollider_RR;
     [SerializeField] private GameObject wheelModel_RR;
     [SerializeField] private GameObject wheelSlider_RR;
-    [SerializeField] private GameObject wheelSmoke_RR;
+    [SerializeField] private ParticleSystem wheelSmoke_RR;
 
     float moveInput;
     float steerInput;
@@ -92,7 +92,7 @@ public class Car_Controller : MonoBehaviour
     [SerializeField]float handBreakslipRate =0.4f;
     public float wheelSteeringAngle;
     public float wheelRotateSpeed;
-    public float Horizontal;
+    //public float Horizontal;
     public float Vertical;
     public float wheelMaxSpeed;
     [SerializeField] private float HandBreakTime;
@@ -110,11 +110,13 @@ public class Car_Controller : MonoBehaviour
     private float wheelsRPM;
     [SerializeField]private float downForceValue;
     private bool isBreake=false;
-    
+    private float radius = 6;
+    private CarAudio carAudio;
 
 
     void Start()
     {
+        StartCoroutine(timedLoop());
         carRb = GetComponent<Rigidbody>();
         carRb.centerOfMass = _centerOfMass;
 
@@ -304,14 +306,19 @@ public class Car_Controller : MonoBehaviour
 
             if (horizontal > 0 ) {
 				//rear tracks size is set to 1.5f       wheel base has been set to 2.55f
-            wheelCollider_FL.steerAngle = Mathf.Rad2Deg * Mathf.Atan(2.55f / (6 + (1.5f / 2))) * horizontal;
-            wheelCollider_FR.steerAngle = Mathf.Rad2Deg * Mathf.Atan(2.55f / (6 - (1.5f / 2))) * horizontal;
+            // wheelCollider_FL.steerAngle = Mathf.Rad2Deg * Mathf.Atan(2.55f / (6 + (1.5f / 2))) * horizontal;
+            // wheelCollider_FR.steerAngle = Mathf.Rad2Deg * Mathf.Atan(2.55f / (6 - (1.5f / 2))) * horizontal;
+            wheelCollider_FL.steerAngle = Mathf.Rad2Deg * Mathf.Atan(2.55f / (radius + (1.5f / 2))) * horizontal;
+            wheelCollider_FR.steerAngle = Mathf.Rad2Deg * Mathf.Atan(2.55f / (radius - (1.5f / 2))) * horizontal;
         } else if (horizontal < 0 ) {
-            wheelCollider_FL.steerAngle = Mathf.Rad2Deg * Mathf.Atan(2.55f / (6 - (1.5f / 2))) * horizontal;
-            wheelCollider_FR.steerAngle = Mathf.Rad2Deg * Mathf.Atan(2.55f / (6 + (1.5f / 2))) * horizontal;
+            // wheelCollider_FL.steerAngle = Mathf.Rad2Deg * Mathf.Atan(2.55f / (6 - (1.5f / 2))) * horizontal;
+            // wheelCollider_FR.steerAngle = Mathf.Rad2Deg * Mathf.Atan(2.55f / (6 + (1.5f / 2))) * horizontal;
 			//transform.Rotate(Vector3.up * steerHelping);
-
-        } else {
+            wheelCollider_FL.steerAngle = Mathf.Rad2Deg * Mathf.Atan(2.55f / (radius - (1.5f / 2))) * horizontal;
+            wheelCollider_FR.steerAngle = Mathf.Rad2Deg * Mathf.Atan(2.55f / (radius + (1.5f / 2))) * horizontal;
+        }
+        else
+        {
             wheelCollider_FL.steerAngle =0;
             wheelCollider_FR.steerAngle =0;
         }
@@ -375,83 +382,20 @@ public class Car_Controller : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space) )
         {
-
-        //     foreach (var wheel in wheels)
-        //     {
-        //         wheel.wheelCollider.brakeTorque = 300 * brakeAcceleration * Time.deltaTime;
-        //     }
-
-            // foreach (var wheel in wheels)
-            // {
-            //     if(wheel.axel == Axel.Rear)
-            //     {
-            //         wheel.wheelCollider.brakeTorque = 1600 * brakeAcceleration * Time.deltaTime;
-            //     }
-            // }
-            // wheelCollider_RL.brakeTorque = 1600 * brakeAcceleration * Time.deltaTime;
-            // wheelCollider_RR.brakeTorque = 1600 * brakeAcceleration * Time.deltaTime;
             isBreake=true;
             wheelcurrentspeed=0;
             wheelCollider_RL.brakeTorque = 8000;
             wheelCollider_RR.brakeTorque = 8000;
-            
-            //wheelCollider_RL.motorTorque = 0;
-            //wheelCollider_RR.motorTorque = 0;
-
-            // if(currentSpeed>49)
-            // {
-            //     StartCoroutine(HandBreak());
-            // }
-
-            // frictionCurveL.stiffness = handBreakslipRate;
-            // wheelCollider_RL.forwardFriction =frictionCurveL;
-
-            // srictionCurveL.stiffness = handBreakslipRate;
-            // wheelCollider_RL.sidewaysFriction = srictionCurveL;
-
-            // frictionCurveR.stiffness = handBreakslipRate;
-            // wheelCollider_RR.forwardFriction =frictionCurveR;
-
-
-            // carLights.isBackLightOn = true;
-            // carLights.OperateBackLights()
+            wheelCollider_FR.brakeTorque = 8000;
+            wheelCollider_FL.brakeTorque = 8000;
         }
-        else
+        else if(Input.GetKeyUp(KeyCode.Space))
         {
-            // foreach (var wheel in wheels)
-            // {
-            //     wheel.wheelCollider.brakeTorque = 0;
-            // }
             isBreake=false;
             wheelCollider_RL.brakeTorque =0;
             wheelCollider_RR.brakeTorque =0;
-
-            // WheelFrictionCurve curve = new WheelFrictionCurve();
-            // curve.stiffness=0.9f;
-            // wheelCollider_RL.forwardFriction=curve;
-            // wheelCollider_RL.sidewaysFriction=curve;
-            // wheelCollider_RR.forwardFriction=curve;
-            // wheelCollider_RR.sidewaysFriction=curve;
-
-
-
-            // frictionCurveL.stiffness = slipRate;
-            // wheelCollider_RL.forwardFriction =frictionCurveL;
-
-            // srictionCurveL.stiffness = slipRate;
-            // wheelCollider_RL.sidewaysFriction = srictionCurveL;
-
-            // frictionCurveR.stiffness = slipRate;
-            // wheelCollider_RR.forwardFriction =frictionCurveR;
-
-            // srictionCurveR.stiffness = slipRate;
-            // wheelCollider_RR.sidewaysFriction = srictionCurveR;
-
-
-
-
-            // carLights.isBackLightOn = false;
-            // carLights.OperateBackLights();
+            wheelCollider_FR.brakeTorque = 0;
+            wheelCollider_FL.brakeTorque = 0;
         }
     }
 
@@ -518,17 +462,16 @@ public class Car_Controller : MonoBehaviour
 
     void WheelEffects()
     {
-        //foreach (var wheel in wheels)
-        //{
-            //var dirtParticleMainSettings = wheel.smokeParticle.main;
-           // if (Input.GetKey(KeyCode.Space) && wheel.axel == Axel.Rear &&wheelCollider_FL.isGrounded == true && carRb.velocity.magnitude >= 10.0f)
-            if ((currentSpeed>39 && ishandbrake) || Input.GetKey(KeyCode.Space)  && wheelCollider_RL.isGrounded == true && carRb.velocity.magnitude >= 10.0f && wheelCollider_RR.isGrounded == true || (currentSpeed>49 && (Horizontal > 0.6 || Horizontal < -0.6)))
+            if ((currentSpeed>39 && ishandbrake) || Input.GetKey(KeyCode.Space)  && wheelCollider_RL.isGrounded == true && carRb.velocity.magnitude >= 10.0f && wheelCollider_RR.isGrounded == true || (currentSpeed>99 && (horizontal > 0.7 || horizontal < -0.7)))
             {
                 wheelSlider_FL.GetComponentInChildren<TrailRenderer>().emitting = true;
                 wheelSlider_FR.GetComponentInChildren<TrailRenderer>().emitting = true;
                 wheelSlider_RL.GetComponentInChildren<TrailRenderer>().emitting = true;
                 wheelSlider_RR.GetComponentInChildren<TrailRenderer>().emitting = true;
-                //wheelSmoke_FL.smokeParticle.Emit(1);
+                wheelSmoke_FL.GetComponent<ParticleSystem>().Emit(1);
+                wheelSmoke_FR.GetComponent<ParticleSystem>().Emit(1);
+                wheelSmoke_RR.GetComponent<ParticleSystem>().Emit(1);
+                wheelSmoke_RL.GetComponent<ParticleSystem>().Emit(1);
             }
             else
             {
@@ -537,7 +480,6 @@ public class Car_Controller : MonoBehaviour
                 wheelSlider_RR.GetComponentInChildren<TrailRenderer>().emitting = false;
                 wheelSlider_RL.GetComponentInChildren<TrailRenderer>().emitting = false;
             }
-        //}
     }
 
     IEnumerator handBreak()
@@ -638,11 +580,13 @@ public class Car_Controller : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.DownArrow) && gear >-1)
         {
+            carAudio.GearChangeSounds();
             gear--;
         }
 
         if(Input.GetKeyDown(KeyCode.UpArrow) && gear < 6)
         {
+            carAudio.GearChangeSounds();
             gear++;
         }
     }
@@ -654,7 +598,7 @@ public class Car_Controller : MonoBehaviour
             //tine it takes to go from normal drive to drift 
         float driftSmothFactor = .7f * Time.deltaTime;
 
-		if(ishandbrake)
+		if(ishandbrake && horizontal != 0)
         {
             sidewaysFriction = wheelCollider_FL.sidewaysFriction;
             forwardFriction = wheelCollider_FL.forwardFriction;
@@ -735,4 +679,12 @@ public class Car_Controller : MonoBehaviour
     {
         carRb.AddForce(-transform.up * downForceValue * carRb.velocity.magnitude);
     }
+
+    private IEnumerator timedLoop(){
+		while(true){
+			yield return new WaitForSeconds(.7f);
+            radius = 6 + KPH / 20;
+            
+		}
+	}
 }
