@@ -104,7 +104,7 @@ public class Car_Controller : MonoBehaviour
 
     private bool ishandbrake=false;
     private float horizontal;
-    public float handBrakeFrictionMultiplier = 2f;
+    public float handBrakeFrictionMultiplier = 4f;
     [SerializeField]private Text RPMTXT;
     private float engineRPM;
     private float wheelsRPM;
@@ -127,7 +127,7 @@ public class Car_Controller : MonoBehaviour
 
     void Update()
     {
-        radius = 6 + currentSpeed/10;
+        radius = 7 + currentSpeed/10;
         //GetInputs();
         AnimateWheels();
 
@@ -517,8 +517,8 @@ public class Car_Controller : MonoBehaviour
         {
             case -1:
                 GearTXT.text="R";
-                wheelcurrentspeed = -800;
-                maxSpeed=100;
+                wheelcurrentspeed = -1000;
+                maxSpeed=70;
                 break;
             case 0:
                 maxSpeed = 0;
@@ -596,11 +596,11 @@ public class Car_Controller : MonoBehaviour
     private float driftFactor;
     float KPH;
     private void adjustTraction(){
-         KPH = carRb.velocity.magnitude * 3.6f;
+        KPH = carRb.velocity.magnitude / 6f;
             //tine it takes to go from normal drive to drift 
-        float driftSmothFactor = .7f * Time.deltaTime;
+        float driftSmothFactor = 9f * Time.deltaTime;
 
-		if(ishandbrake && horizontal != 0)
+		if(ishandbrake)
         {
             sidewaysFriction = wheelCollider_FL.sidewaysFriction;
             forwardFriction = wheelCollider_FL.forwardFriction;
@@ -609,7 +609,7 @@ public class Car_Controller : MonoBehaviour
             sidewaysFriction.extremumValue =sidewaysFriction.asymptoteValue = forwardFriction.extremumValue = forwardFriction.asymptoteValue =
                 Mathf.SmoothDamp(forwardFriction.asymptoteValue,driftFactor * handBrakeFrictionMultiplier,ref velocity ,driftSmothFactor );
 
-                sidewaysFriction.stiffness=2f;
+                sidewaysFriction.stiffness=0.75f;
             
                 wheelCollider_FL.sidewaysFriction = sidewaysFriction;
                 wheelCollider_FL.forwardFriction = forwardFriction;
@@ -631,10 +631,10 @@ public class Car_Controller : MonoBehaviour
                 wheelCollider_FR.sidewaysFriction = sidewaysFriction;
                 wheelCollider_FR.forwardFriction = forwardFriction;
             
-            GetComponent<Rigidbody>().AddForce(transform.forward * (KPH / 500) * 30000 );   
+            GetComponent<Rigidbody>().AddForce(transform.forward * (KPH / 250) * 40000 );   
 
-            wheelCollider_RL.brakeTorque = 16000;
-            wheelCollider_RR.brakeTorque = 16000;
+            wheelCollider_RL.brakeTorque = 9000;
+            wheelCollider_RR.brakeTorque = 9000;
 		}
             //executed when handbrake is being held
         else
@@ -646,7 +646,7 @@ public class Car_Controller : MonoBehaviour
 			forwardFriction.extremumValue = forwardFriction.asymptoteValue = sidewaysFriction.extremumValue = sidewaysFriction.asymptoteValue = 
                 ((KPH * handBrakeFrictionMultiplier) / 300) + 1;
 
-                sidewaysFriction.stiffness=1f;
+                sidewaysFriction.stiffness=3f;
 
 				wheelCollider_FL.forwardFriction = forwardFriction;
 				wheelCollider_FL.sidewaysFriction = sidewaysFriction;
