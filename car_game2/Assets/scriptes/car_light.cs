@@ -10,14 +10,20 @@ public enum Side
         Front,
         Back
     }
+    [Header("light")]
+    [SerializeField]private GameObject BackLightOBj;
+    [SerializeField]private GameObject FrontLightOBJ;
+    [SerializeField]private Material light_mat_idel;
+    [SerializeField]private Material light_mat_lgiht;
+    [SerializeField]private GameObject lights;
 
-    [System.Serializable]
-    public struct Light
-    {
-        public GameObject lightObj;
-        public Material lightMat;
-        public Side side;
-    }
+    //[System.Serializable]
+    // public struct Light
+    // {
+    //     public GameObject lightObj;
+    //     public Material lightMat;
+    //     public Side side;
+    // }
 
    // public Toggle lightToggle;
 
@@ -29,7 +35,7 @@ public enum Side
     public Color backLightOnColor;
     public Color backLightOffColor;
 
-    public List<Light> lights;
+
 
 
 
@@ -94,7 +100,7 @@ public enum Side
             }
             else
             {
-                blanckobj_L.GetComponent<Renderer>().material =blanck_idle_L;
+
                 blankR=false;
             }
 
@@ -135,7 +141,7 @@ public enum Side
         }
 
 
-        if(Input.GetKey(KeyCode.Space) || car_Controller.gear==-1)
+        if(Input.GetKey(KeyCode.Space) && car_Controller.currentSpeed <49)
         {
             //breaklight.SetVector("_EmissionColor",new Vector4(191,191,191,4));
             breakOBJ.GetComponent<Renderer>().material =breakMATbright;
@@ -189,60 +195,23 @@ public enum Side
 
         if (isFrontLightOn)
         {
-            //Turn On Lights
-            // foreach(var light in lights)
-            // {
-            //     if(light.side == Side.Front && light.lightObj.activeInHierarchy == false)
-            //     {
-            //         light.lightObj.SetActive(true);
-            //         light.lightMat.color = frontLightOnColor;
-            //     }
-            // }
-
-            //lightToggle.gameObject.GetComponent<Image>().color = Color.yellow;
+            
+            lights.SetActive(true);
+            BackLightOBj.GetComponent<Renderer>().material =light_mat_lgiht;
+            FrontLightOBJ.GetComponent<Renderer>().material =light_mat_lgiht;
         }
         else
         {
-            //Turn Off Lights
-            foreach (var light in lights)
-            {
-                if (light.side == Side.Front && light.lightObj.activeInHierarchy == true)
-                {
-                    light.lightObj.SetActive(false);
-                    light.lightMat.color = frontLightOffColor;
-                }
-            }
-
-            //lightToggle.gameObject.GetComponent<Image>().color = Color.white;
+            lights.SetActive(false);
+            BackLightOBj.GetComponent<Renderer>().material =light_mat_idel;
+            FrontLightOBJ.GetComponent<Renderer>().material =light_mat_idel;
         }
     }
 
     public void OperateBackLights()
     {
-        if (isBackLightOn)
-        {
-            //Turn On Lights
-            foreach (var light in lights)
-            {
-                if (light.side == Side.Back && light.lightObj.activeInHierarchy == false)
-                {
-                    light.lightObj.SetActive(true);
-                    light.lightMat.color = backLightOnColor;
-                }
-            }
-        }
-        else
-        {
-            //Turn Off Lights
-            foreach (var light in lights)
-            {
-                if (light.side == Side.Back && light.lightObj.activeInHierarchy == true)
-                {
-                    light.lightObj.SetActive(false);
-                    light.lightMat.color = backLightOffColor;
-                }
-            }
-        }
+
+
     }
     IEnumerator blank_R()
     {

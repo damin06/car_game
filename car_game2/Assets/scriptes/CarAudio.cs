@@ -28,20 +28,20 @@ public class CarAudio : MonoBehaviour
         PitchControl();
         GearChange();
         EngineVolume();
+        BrakeVolume();
     }
 
     private void BrakeVolume()
     {
-        if(Input.GetAxisRaw("Jump") == 1 || Input.GetAxisRaw("Vertical") < 0)
+
+
+        if(car_controller.currentSpeed >39 && (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.S)))
         {
-            brakeSound.volume += Time.deltaTime;
+            brakeSound.volume =+ 100 * Time.deltaTime;
         }
-        else
+        else if(brakeSound.volume > 0)
         {
-            if(brakeSound.volume > 0.1f)
-            {
-                brakeSound.volume -= Time.deltaTime;
-            }
+            brakeSound.volume -= 100*Time.deltaTime;
         }
     }
 

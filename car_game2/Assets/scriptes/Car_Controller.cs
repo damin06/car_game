@@ -112,6 +112,7 @@ public class Car_Controller : MonoBehaviour
     private bool isBreake=false;
     private float radius = 6;
     private CarAudio carAudio;
+    //public AnimationCurve enginePower;
 
 
     void Start()
@@ -119,13 +120,14 @@ public class Car_Controller : MonoBehaviour
         StartCoroutine(timedLoop());
         carRb = GetComponent<Rigidbody>();
         carRb.centerOfMass = _centerOfMass;
+        carAudio = GetComponent<CarAudio>();
 
         //carLights = GetComponent<CarLights>();
     }
 
     void Update()
     {
-
+        radius = 6 + currentSpeed/10;
         //GetInputs();
         AnimateWheels();
 
@@ -172,8 +174,8 @@ public class Car_Controller : MonoBehaviour
         
         Vector3 vel = carRb.velocity;
         //currentSpeed = carRb.velocity.magnitude * 2.23693629f;
-        currentSpeed=carRb.velocity.sqrMagnitude * 2.7f;
-
+        currentSpeed=carRb.velocity.sqrMagnitude /7;
+//10.8
     }
 
     // public void MoveInput(float input)
@@ -384,10 +386,10 @@ public class Car_Controller : MonoBehaviour
         {
             isBreake=true;
             wheelcurrentspeed=0;
-            wheelCollider_RL.brakeTorque = 8000;
-            wheelCollider_RR.brakeTorque = 8000;
-            wheelCollider_FR.brakeTorque = 8000;
-            wheelCollider_FL.brakeTorque = 8000;
+            wheelCollider_RL.brakeTorque = brakeAcceleration;
+            wheelCollider_RR.brakeTorque = brakeAcceleration;
+            wheelCollider_FR.brakeTorque = brakeAcceleration;
+            wheelCollider_FL.brakeTorque = brakeAcceleration;
         }
         else if(Input.GetKeyUp(KeyCode.Space))
         {
@@ -468,10 +470,10 @@ public class Car_Controller : MonoBehaviour
                 wheelSlider_FR.GetComponentInChildren<TrailRenderer>().emitting = true;
                 wheelSlider_RL.GetComponentInChildren<TrailRenderer>().emitting = true;
                 wheelSlider_RR.GetComponentInChildren<TrailRenderer>().emitting = true;
-                wheelSmoke_FL.GetComponent<ParticleSystem>().Emit(1);
-                wheelSmoke_FR.GetComponent<ParticleSystem>().Emit(1);
-                wheelSmoke_RR.GetComponent<ParticleSystem>().Emit(1);
-                wheelSmoke_RL.GetComponent<ParticleSystem>().Emit(1);
+                // wheelSmoke_FL.GetComponent<ParticleSystem>().Emit(1);
+                // wheelSmoke_FR.GetComponent<ParticleSystem>().Emit(1);
+                // wheelSmoke_RR.GetComponent<ParticleSystem>().Emit(1);
+                // wheelSmoke_RL.GetComponent<ParticleSystem>().Emit(1);
             }
             else
             {
@@ -525,55 +527,55 @@ public class Car_Controller : MonoBehaviour
                 break;  
             case 1:
                 wheelcurrentspeed=3000;
-                maxSpeed=148.5f;
+                maxSpeed=80;
                 GearTXT.text=gear.ToString();
                 break;
             case 2:
                 if(!isBreake)
                 {
-                    wheelcurrentspeed= currentSpeed > 230 ? 3000 : 1000;
+                    wheelcurrentspeed= currentSpeed > 230 ? 3000 : 3000;
                 }
                 
-                maxSpeed=243;
+                maxSpeed=120;
                 GearTXT.text=gear.ToString();
                 break;
             case 3:
                 if(!isBreake)
                 {
-                    wheelcurrentspeed= currentSpeed > 680 ? 3000 : 1000;
+                    wheelcurrentspeed= currentSpeed > 680 ? 6000 : 3000;
                 }
                 
                 
-                maxSpeed=351;
+                maxSpeed=180;
                 GearTXT.text=gear.ToString();
                 break;
             case 4:
                 if(!isBreake)
                 {
-                    wheelcurrentspeed= currentSpeed > 1160 ? 3000 : 1000;
+                    wheelcurrentspeed= currentSpeed > 1160 ? 6000 : 3000;
                 }
                     
 
-                maxSpeed=486;
+                maxSpeed=220;
                 GearTXT.text=gear.ToString();
                 break;
             case 5:
                 if(!isBreake)
                 {
-                    wheelcurrentspeed= currentSpeed > 1720 ? 3000 : 1000;
+                    wheelcurrentspeed= currentSpeed > 1720 ? 6000 : 3000;
                 }
                     
-                maxSpeed=567;
+                maxSpeed=260;
                 GearTXT.text=gear.ToString();
                 break;
             case 6:
                 if(!isBreake)
                 {
-                    wheelcurrentspeed= currentSpeed > 2680 ? 3000 : 1000;
+                    wheelcurrentspeed= currentSpeed > 2680 ? 6000 : 3000;
                 }
                     
         
-                maxSpeed=702;
+                maxSpeed=280;
                 GearTXT.text=gear.ToString();
                 break;
         }
@@ -607,7 +609,7 @@ public class Car_Controller : MonoBehaviour
             sidewaysFriction.extremumValue =sidewaysFriction.asymptoteValue = forwardFriction.extremumValue = forwardFriction.asymptoteValue =
                 Mathf.SmoothDamp(forwardFriction.asymptoteValue,driftFactor * handBrakeFrictionMultiplier,ref velocity ,driftSmothFactor );
 
-                sidewaysFriction.stiffness=0.75f;
+                sidewaysFriction.stiffness=2f;
             
                 wheelCollider_FL.sidewaysFriction = sidewaysFriction;
                 wheelCollider_FL.forwardFriction = forwardFriction;
@@ -629,10 +631,10 @@ public class Car_Controller : MonoBehaviour
                 wheelCollider_FR.sidewaysFriction = sidewaysFriction;
                 wheelCollider_FR.forwardFriction = forwardFriction;
             
-            GetComponent<Rigidbody>().AddForce(transform.forward * (KPH / 400) * 20000 );   
+            GetComponent<Rigidbody>().AddForce(transform.forward * (KPH / 500) * 30000 );   
 
-            wheelCollider_RL.brakeTorque = 3000;
-            wheelCollider_RR.brakeTorque = 3000;
+            wheelCollider_RL.brakeTorque = 16000;
+            wheelCollider_RR.brakeTorque = 16000;
 		}
             //executed when handbrake is being held
         else
@@ -665,7 +667,7 @@ public class Car_Controller : MonoBehaviour
             wheelCollider_RL.GetGroundHit(out wheelHit);            
             wheelCollider_RR.GetGroundHit(out wheelHit);            
 
-			if(wheelHit.sidewaysSlip < 0 )	driftFactor = (1 + horizontal) * Mathf.Abs(wheelHit.sidewaysSlip) ;
+			if(wheelHit.sidewaysSlip < 0 )	driftFactor = (1 - horizontal) * Mathf.Abs(wheelHit.sidewaysSlip) ;
 
 			if(wheelHit.sidewaysSlip > 0 )	driftFactor = (1 + horizontal )* Mathf.Abs(wheelHit.sidewaysSlip );
 		
