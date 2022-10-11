@@ -285,14 +285,7 @@ public class Car_Controller : MonoBehaviour
                 wheelCollider_RR.motorTorque = Mathf.Lerp(wheelCollider_RR.motorTorque, wheelcurrentspeed, Time.deltaTime * 100);
             }
 
-            if(Input.GetKey(KeyCode.S))
-            {
-                ishandbrake=true;
-            }
-            else
-            {
-                ishandbrake=false;
-            }
+
 
             if (Vertical < 0)
             {
@@ -596,9 +589,19 @@ public class Car_Controller : MonoBehaviour
     private float driftFactor;
     float KPH;
     private void adjustTraction(){
-        KPH = carRb.velocity.magnitude / 6f;
+        KPH = carRb.velocity.magnitude / 4.6f;
             //tine it takes to go from normal drive to drift 
-        float driftSmothFactor = 9f * Time.deltaTime;
+        float driftSmothFactor = 9.3f * Time.deltaTime;
+
+
+        if(Input.GetKey(KeyCode.S))
+            {
+                ishandbrake=true;
+            }
+            else
+            {
+                ishandbrake=false;
+            }
 
 		if(ishandbrake)
         {
