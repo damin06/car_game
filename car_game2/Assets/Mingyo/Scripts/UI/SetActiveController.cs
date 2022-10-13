@@ -12,13 +12,11 @@ public class SetActiveController : MonoBehaviour
         {
             _gameObject.SetActive(false);
             setActive = false;
-            Debug.Log("false");
         }
         else
         {
             _gameObject.SetActive(true);
             setActive = true;
-            Debug.Log("true");
         }
     }
 }
