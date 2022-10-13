@@ -36,56 +36,89 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\engine\wheelsManager.cs" />
-     <Compile Include="Assets\Zukomazi - Pro Drift Controller v1\Scripts\CarDamage.cs" />
-     <Compile Include="Assets\Scripts\engine\AntiRollBar.cs" />
-     <Compile Include="Assets\02_scriptes\damin\cameraFollow.cs" />
-     <Compile Include="Assets\Zukomazi - Pro Drift Controller v1\Tools\UnitySkidmarks\Skidmarks.cs" />
-     <Compile Include="Assets\02_scriptes\damin\CheckPoint.cs" />
-     <Compile Include="Assets\Scripts\engine\powerups.cs" />
-     <Compile Include="Assets\Scripts\engine\carController.cs" />
-     <Compile Include="Assets\Zukomazi - Pro Drift Controller v1\Tools\UnitySkidmarks\WheelSkid.cs" />
-     <Compile Include="Assets\02_scriptes\damin\Car_Controller.cs" />
-     <Compile Include="Assets\Zukomazi - Pro Drift Controller v1\Scripts\LightController.cs" />
-     <Compile Include="Assets\Scripts\engine\inputs.cs" />
-     <Compile Include="Assets\Unity-Speedometer-master\Speedometer.cs" />
-     <Compile Include="Assets\Zukomazi - Pro Drift Controller v1\Scripts\WheelAlignment.cs" />
-     <Compile Include="Assets\Scripts\poweUps\Nitrus.cs" />
-     <Compile Include="Assets\Scripts\engine\cameraController.cs" />
-     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\Zukomazi - Pro Drift Controller v1\Tools\CarCamera\CarCam.cs" />
-     <Compile Include="Assets\02_scriptes\damin\car_light.cs" />
-     <Compile Include="Assets\02_scriptes\damin\CarAudio.cs" />
-     <Compile Include="Assets\Zukomazi - Pro Drift Controller v1\Scripts\SpeedCalculator.cs" />
-     <Compile Include="Assets\02_scriptes\damin\check.cs" />
-     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
-     <Compile Include="Assets\Zukomazi - Pro Drift Controller v1\Scripts\WheelController.cs" />
-     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-     <None Include="Assets\Zukomazi - Pro Drift Controller v1\Tools\UnitySkidmarks\Skidmarks.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <None Include="Assets\Zukomazi - Pro Drift Controller v1\Audio\PC Computer - Colin McRae Rally 20 - Lancer\ReadMe.txt" />
-     <None Include="Assets\Zukomazi - Pro Drift Controller v1\Models\Test Track One\CREDITS.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\Zukomazi - Pro Drift Controller v1\Audio\PC Computer - Colin McRae Rally 20 - Subaru\ReadMe.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <Compile Include="Assets\Damin\Scripts\engine\wheelsManager.cs" />
+     <Compile Include="Assets\Damin\Zukomazi - Pro Drift Controller v1\Scripts\CarDamage.cs" />
+     <Compile Include="Assets\Damin\Scripts\engine\AntiRollBar.cs" />
+     <Compile Include="Assets\Damin\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+     <Compile Include="Assets\Damin\02_scriptes\damin\cameraFollow.cs" />
+     <Compile Include="Assets\Damin\Zukomazi - Pro Drift Controller v1\Tools\UnitySkidmarks\Skidmarks.cs" />
+     <Compile Include="Assets\Damin\02_scriptes\damin\CheckPoint.cs" />
+     <Compile Include="Assets\Damin\Scripts\engine\powerups.cs" />
+     <Compile Include="Assets\Damin\Scripts\engine\carController.cs" />
+     <Compile Include="Assets\Damin\Zukomazi - Pro Drift Controller v1\Tools\UnitySkidmarks\WheelSkid.cs" />
+     <Compile Include="Assets\Damin\02_scriptes\damin\Car_Controller.cs" />
+     <Compile Include="Assets\Damin\Zukomazi - Pro Drift Controller v1\Scripts\LightController.cs" />
+     <Compile Include="Assets\Damin\Scripts\engine\inputs.cs" />
+     <Compile Include="Assets\Damin\Unity-Speedometer-master\Speedometer.cs" />
+     <Compile Include="Assets\Damin\Zukomazi - Pro Drift Controller v1\Scripts\WheelAlignment.cs" />
+     <Compile Include="Assets\Damin\Scripts\poweUps\Nitrus.cs" />
+     <Compile Include="Assets\Damin\Scripts\engine\cameraController.cs" />
+     <Compile Include="Assets\Damin\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\Damin\Zukomazi - Pro Drift Controller v1\Tools\CarCamera\CarCam.cs" />
+     <Compile Include="Assets\Damin\02_scriptes\damin\car_light.cs" />
+     <Compile Include="Assets\Damin\02_scriptes\damin\CarAudio.cs" />
+     <Compile Include="Assets\Damin\Zukomazi - Pro Drift Controller v1\Scripts\SpeedCalculator.cs" />
+     <Compile Include="Assets\Damin\02_scriptes\damin\check.cs" />
+     <Compile Include="Assets\Damin\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
+     <Compile Include="Assets\Damin\Zukomazi - Pro Drift Controller v1\Scripts\WheelController.cs" />
+     <None Include="Assets\Damin\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
+     <None Include="Assets\Damin\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\Damin\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\Damin\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\Damin\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\Damin\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\Damin\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Damin\Zukomazi - Pro Drift Controller v1\Tools\UnitySkidmarks\Skidmarks.shader" />
+     <None Include="Assets\Damin\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\Damin\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
+     <None Include="Assets\Damin\Standard Assets\Vehicles\Aircraft\AircraftGuidelines.txt" />
+     <None Include="Assets\Damin\Standard Assets\Cameras\CameraGuidelines.txt" />
+     <None Include="Assets\Damin\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+     <None Include="Assets\Damin\Zukomazi - Pro Drift Controller v1\Audio\PC Computer - Colin McRae Rally 20 - Lancer\ReadMe.txt" />
+     <None Include="Assets\Damin\Zukomazi - Pro Drift Controller v1\Models\Test Track One\CREDITS.txt" />
+     <None Include="Assets\Damin\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+     <None Include="Assets\Damin\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\Damin\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\Damin\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\Damin\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+     <None Include="Assets\Damin\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\Damin\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\Damin\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\Damin\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\Damin\Standard Assets\Effects\ImageEffects\Readme.txt" />
+     <None Include="Assets\Damin\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+     <None Include="Assets\Damin\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Damin\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+     <None Include="Assets\Damin\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\Damin\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\Damin\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\Damin\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\Damin\Zukomazi - Pro Drift Controller v1\Audio\PC Computer - Colin McRae Rally 20 - Subaru\ReadMe.txt" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\Damin\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\Damin\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Damin\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
+     <None Include="Assets\Damin\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\Damin\Standard Assets\Fonts\OpenSans\License!.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -826,10 +859,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{c9b8f1dd-9260-62fc-457f-9e09b4a921af}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
