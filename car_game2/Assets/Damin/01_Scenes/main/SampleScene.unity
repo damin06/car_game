@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 74cfe0e0cf7ad53449c18d77b56b89a1, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e980bc7fbb00dc34b86b95ac842d1920, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.065650515, g: 0.090478435, b: 0.23074333, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 72a86ec97551f3c45a49e32b1b085eaf,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1438,8 +1439,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSmoothness: 5
   rotSmoothness: 7
-  moveOffset: {x: 0, y: 4, z: -6}
-  rotOffset: {x: 0, y: 0, z: 0}
+  moveOffset: {x: 0, y: 4, z: -7.2}
+  rotOffset: {x: 0, y: 1.65, z: 0}
   carTarget: {fileID: 5609014227784783218}
 --- !u!1001 &342525708
 PrefabInstance:
@@ -3105,7 +3106,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: a6560a915ef98420e9faacc1c7438823, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 96a9bb6eada2e314d87c7afbaa0c3867, type: 2}
 --- !u!4 &832575519
 Transform:
   m_ObjectHideFlags: 0
@@ -7045,6 +7046,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1936228483254034617, guid: 0de28f02167ea5e4f8f48b28fbcdc1bd,
         type: 3}
+      propertyPath: m_Mass
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936228483254034617, guid: 0de28f02167ea5e4f8f48b28fbcdc1bd,
+        type: 3}
       propertyPath: m_SuspensionDistance
       value: 0.161
       objectReference: {fileID: 0}
@@ -7185,6 +7191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1936228484572364599, guid: 0de28f02167ea5e4f8f48b28fbcdc1bd,
         type: 3}
+      propertyPath: m_Mass
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936228484572364599, guid: 0de28f02167ea5e4f8f48b28fbcdc1bd,
+        type: 3}
       propertyPath: m_SuspensionDistance
       value: 0.161
       objectReference: {fileID: 0}
@@ -7215,6 +7226,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1936228484893908221, guid: 0de28f02167ea5e4f8f48b28fbcdc1bd,
         type: 3}
+      propertyPath: m_Mass
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936228484893908221, guid: 0de28f02167ea5e4f8f48b28fbcdc1bd,
+        type: 3}
       propertyPath: m_SuspensionDistance
       value: 0.161
       objectReference: {fileID: 0}
@@ -7242,6 +7258,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SuspensionSpring.targetPosition
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936228484969215807, guid: 0de28f02167ea5e4f8f48b28fbcdc1bd,
+        type: 3}
+      propertyPath: m_Mass
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1936228484969215807, guid: 0de28f02167ea5e4f8f48b28fbcdc1bd,
         type: 3}
